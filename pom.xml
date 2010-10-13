@@ -20,19 +20,34 @@
 	<properties>
 		<custom.version>1.4-SNAPSHOT</custom.version>
 	</properties>
-	<dependencies>
+	<!--<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
-		</dependency><!--
+		</dependency>
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>${custom.version}</version>
 		</dependency>
-	--></dependencies>
+	</dependencies>
+	-->
+	<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>maven-workshop-webapp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>service-interfaces</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            </dependencies>
+            </dependencyManagement>
 	<build>
 		<pluginManagement>
 			<plugins>
