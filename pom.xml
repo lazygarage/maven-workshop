@@ -22,10 +22,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-				<groupId>com.thoughtworks.xstream</groupId>
-				<artifactId>xstream</artifactId>
-				<version>1.4-SNAPSHOT</version>
-			</dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<pluginManagement>
@@ -46,9 +46,14 @@
 					<artifactId>weblogic-maven-plugin</artifactId>
 					<version>2.9.3-SNAPSHOT</version>
 				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.0-beta-9</version>
+				</plugin>
 			</plugins>
 		</pluginManagement>
-	</build>	
+	</build>
 	<repositories>
 		<!-- Repository local to MHHE -->
 		<repository>
@@ -67,5 +72,5 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	
+
 </project>
