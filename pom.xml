@@ -13,7 +13,9 @@
 		<url>scm:git:git@github.com:lazygarage/maven-workshop.git</url>
 		<developerConnection>scm:git:git@github.com:lazygarage/maven-workshop.git</developerConnection>
 	</scm>
-
+	<properties>
+		<custom.version>1.4-SNAPSHOT</custom.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -24,7 +26,7 @@
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
-			<version>1.4-SNAPSHOT</version>
+			<version>${custom.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
