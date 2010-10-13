@@ -7,6 +7,13 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>maven-workshop Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+
+	<scm>
+		<connection>scm:git@github.com:lazygarage/maven-workshop.git</connection>
+		<url>scm:git@github.com:lazygarage/maven-workshop.git</url>
+		<developerConnection>scm:git@github.com:lazygarage/maven-workshop.git</developerConnection>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -14,6 +21,11 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+				<groupId>com.thoughtworks.xstream</groupId>
+				<artifactId>xstream</artifactId>
+				<version>1.4-SNAPSHOT</version>
+			</dependency>
 	</dependencies>
 	<build>
 		<pluginManagement>
@@ -36,14 +48,24 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-	</build>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.thoughtworks.xstream</groupId>
-				<artifactId>xstream</artifactId>
-				<version>1.4-SNAPSHOT</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	</build>	
+	<repositories>
+		<!-- Repository local to MHHE -->
+		<repository>
+			<id>snapshots</id>
+			<name></name>
+			<url>http://snapshots.repository.codehaus.org</url>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>ignore</checksumPolicy>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<checksumPolicy>ignore</checksumPolicy>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+	
 </project>
