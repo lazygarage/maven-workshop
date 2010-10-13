@@ -9,9 +9,9 @@
 	<url>http://maven.apache.org</url>
 
 	<scm>
-		<connection>scm:git@github.com:lazygarage/maven-workshop.git</connection>
-		<url>scm:git@github.com:lazygarage/maven-workshop.git</url>
-		<developerConnection>scm:git@github.com:lazygarage/maven-workshop.git</developerConnection>
+		<connection>scm:git:git@github.com:lazygarage/maven-workshop.git</connection>
+		<url>scm:git:git@github.com:lazygarage/maven-workshop.git</url>
+		<developerConnection>scm:git:git@github.com:lazygarage/maven-workshop.git</developerConnection>
 	</scm>
 
 	<dependencies>
