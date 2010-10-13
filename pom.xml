@@ -23,12 +23,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>${custom.version}</version>
 		</dependency>
-	</dependencies>
+	--></dependencies>
 	<build>
 		<pluginManagement>
 			<plugins>
