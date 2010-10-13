@@ -7,8 +7,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>${parent.groupId}</groupId>	
-	<artifactId>maven-workshop-webapp</artifactId>
-	 <version>1.0.0</version>
+	<artifactId>maven-workshop-webapp</artifactId>	
 	<packaging>war</packaging>
 	<name>maven-workshop Maven Webapp</name>
 	<url>http://maven.apache.org</url>
