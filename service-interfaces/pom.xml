@@ -2,7 +2,7 @@
 	<parent>
 		<groupId>com.arena</groupId>
 		<artifactId>maven-workshop</artifactId>
-		<version>1.0.3-trunk</version>
+		<version>1.0.4-trunk-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>${parent.groupId}</groupId>
