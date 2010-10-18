@@ -3,7 +3,7 @@
 	<groupId>com.arena</groupId>
 	<artifactId>maven-workshop</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.3-trunk-SNAPSHOT</version>
+	<version>1.0.3-trunk</version>
 	<name>maven-workshop Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
